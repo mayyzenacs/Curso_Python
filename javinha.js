@@ -1,10 +1,12 @@
 function selecao () {
     const form = document.querySelector(".form");
 
-    function recebimento(evento) {
+    form.onsubmit = function (evento) {
         evento.preventDefault()
+        alert(1)
+        console.log("enviado")
 
-    }
+    };
     form.addEventListener("submit", recebimento)
 
     
